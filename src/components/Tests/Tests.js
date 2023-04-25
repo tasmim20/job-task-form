@@ -1,12 +1,49 @@
 import React, { useState, useEffect } from 'react';
 
-// define the "Sectors" select box options
 const sectors = [
-  { value: 'technology', label: 'Technology' },
-  { value: 'finance', label: 'Finance' },
-  { value: 'healthcare', label: 'Healthcare' },
-  { value: 'education', label: 'Education' }
-];
+    { value: 'Manufacturing', label: 'Manufacturing' },
+    { value: 'Construction materials', label: 'Construction materials'},
+    { value: 'Food and Beverage', label: 'Food and Beverage'},
+    { value: 'Electronics and optics', label: 'Electronics and optics'},
+    { value: 'Bakery & Confectionery products', label: 'Bakery & Confectionery products'},
+    { value: 'Fish Products', label: 'Fish Products'},
+    { value: 'Meat Products', label: 'Meat Products'},
+    { value: 'Other', label: 'Other'},
+    { value: 'Furniture', label: 'Furniture'},
+    { value: 'Bedroom', label: 'Bedroom'},
+    { value: 'kitchen', label: 'kitchen'},
+    { value: 'Living Room', label: 'Living Room'},
+    { value: 'Office', label: 'Office'},
+    { value: 'Other(Furniture)', label: 'Other(Furniture)'},
+    { value: 'Machinery', label: 'Machinery'},
+    { value: 'Machinery components', label: 'Machinery components'},
+    { value: 'Maritime', label: 'Maritime'},
+    { value: 'Aluminium and steel', label: 'Aluminium and steel'},
+    { value: 'Boat building', label: 'Boat building'},
+    { value: 'other', label: 'other'},
+    { value: 'Plastic and Rubber', label: 'Plastic and Rubber'},
+    { value: 'Packaging', label: 'Packaging'},
+    { value: 'Plastic goods', label: 'Plastic goods'},
+    { value: 'Blowing', label: 'Blowing'},
+    { value: 'Moulding', label: 'Moulding'},
+    { value: 'others', label: 'others'},
+    { value: 'Printing', label: 'Printing'},
+    { value: 'Advertising', label: 'Advertising'},
+    { value: 'copying', label: 'copying'},
+    { value: 'Advertising', label: 'Advertising'},
+    { value: 'other', label: 'other'},
+    { value: 'Service', label: 'Service'},
+    { value: 'Engineering', label: 'Engineering'},
+    { value: 'Data processing', label: 'Data processing'},
+    { value: 'software hardware', label: 'software hardware'},
+    { value: 'Telecommunication', label: 'Telecommunication'},
+    { value: 'Tourism', label: 'Tourism'},
+    { value: 'Air', label: 'Air'},
+    { value: 'Rail', label: 'Rail'},
+    { value: 'Road', label: 'Road'},
+  ];
+
+
 
 function App() {
   // set up state for storing user input data
